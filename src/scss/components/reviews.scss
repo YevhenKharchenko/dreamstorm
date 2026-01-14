@@ -1,0 +1,144 @@
+.reviews-section {
+  @include media(desktop) {
+  }
+}
+
+.reviews-bg-wrapper {
+  padding-top: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 150px;
+    max-width: 1440px;
+  }
+}
+
+.reviews-container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.reviews-title {
+}
+
+.reviews-swiper-container {
+  max-width: 305px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+  }
+}
+
+.reviews-swiper-container.show {
+  visibility: visible;
+}
+
+.reviews-swiper-wrapper {
+  @include media(desktop) {
+  }
+}
+
+.reviews-slide {
+  display: flex !important;
+  flex-direction: column;
+  border: 1px solid #e63946;
+  border-radius: 12px;
+  padding: 21px 35px;
+  width: 100%;
+  max-width: 305px;
+  min-height: 332px;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-stars-img {
+  margin-bottom: 16px;
+}
+
+.reviews-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d1d5db;
+  margin-bottom: 18px;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-item-name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: auto;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-img {
+  @include media(desktop) {
+  }
+}
+
+.reviews-item-name {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #e63946;
+
+  @include media(desktop) {
+  }
+}
+
+.controls {
+  display: none;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-top: 22px;
+  }
+}
+
+.arrow-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+
+  &:active {
+    transform: scale(0.9);
+  }
+
+  @include media(desktop) {
+    &:hover {
+      transform: scale(1.1);
+
+      .arrow-icon {
+      }
+    }
+  }
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: 0.5;
+
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+.arrow-icon {
+}

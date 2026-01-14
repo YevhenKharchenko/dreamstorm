@@ -1,0 +1,84 @@
+.policy-section {
+  background: #0e0f14;
+  padding-top: 130px;
+  padding-bottom: 40px;
+
+  @include media(desktop) {
+    padding-top: 158px;
+    padding-bottom: 100px;
+  }
+}
+
+.policy-main-title {
+  font-family: 'Cinzel', sans-serif;
+  font-weight: 700;
+  font-size: 38px;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 28px;
+
+  @include media(desktop) {
+    font-size: 38px;
+    margin-bottom: 40px;
+  }
+}
+
+.policy-title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d1d5db;
+  margin-bottom: 16px;
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.policy-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d1d5db;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.policy-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.policy-item {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d1d5db;
+  margin-bottom: 8px;
+
+  &:last-child {
+    margin-bottom: 16px;
+  }
+
+  @include media(desktop) {
+    font-size: 16px;
+  }
+}
+
+.policy-span {
+  text-decoration: underline;
+}
+
+.policy-link {
+  text-decoration: underline;
+  word-wrap: break-word;
+}
