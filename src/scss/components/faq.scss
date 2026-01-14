@@ -18,18 +18,27 @@
   }
 }
 
+.faq-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    gap: 131px;
+  }
+}
+
 .faq-list {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 14px;
+  gap: 20px;
 
   @include media(desktop) {
-    gap: 12px;
   }
 }
 
 .faq-list-item {
+  border-bottom: 1px solid #9faedb;
+  padding: 9px 0;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -38,16 +47,14 @@
   transition: all 0.3s ease-in-out;
 
   @include media(desktop) {
-    max-width: 415px;
+    max-width: 628px;
   }
 }
 
 .faq-top-text-btn {
-  border: 1px solid #e63946;
-  border-radius: 12px;
-  padding: 11px;
   display: flex;
   align-items: center;
+  gap: 8px;
   width: 100%;
 
   @include media(desktop) {
@@ -55,11 +62,10 @@
 }
 
 .faq-btn-text {
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.5;
-  color: #fff;
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #9faedb;
   text-align: left;
   transition: color 0.3s ease-in-out;
 
@@ -71,9 +77,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 24px;
-  height: 24px;
+  min-width: 32px;
+  height: 32px;
   margin-left: auto;
+  transform: rotate(90deg);
   transition: transform 0.3s ease-in-out;
 
   @include media(desktop) {
@@ -86,13 +93,11 @@
 }
 
 .faq-bottom-text {
-  border: 0.5px solid #e63946;
-  border-radius: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #d1d5db;
+  color: #e6eaf2;
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -103,6 +108,7 @@
 }
 
 .is-visible {
+  margin-top: 18px;
   max-height: 500px;
   opacity: 1;
 
@@ -111,12 +117,19 @@
 }
 
 .faq-list-item.faq-open .faq-toggle-symbol {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }
 
 .faq-list-item.faq-open {
 }
 
 .faq-list-item.faq-open .faq-bottom-text {
-  padding: 11px;
+}
+
+.faq-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
 }

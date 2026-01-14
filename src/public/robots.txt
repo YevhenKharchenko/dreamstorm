@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://dravonix.pro/sitemap.xml
+Sitemap: https://dreamstorm.site/sitemap.xml

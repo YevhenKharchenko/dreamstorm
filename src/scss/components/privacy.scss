@@ -1,24 +1,30 @@
+.privacy-body {
+  .header-bg-wrapper {
+    background-image: none;
+  }
+}
+
 .policy-section {
-  background: #0e0f14;
-  padding-top: 130px;
-  padding-bottom: 40px;
+  background: #19152d;
+  padding-top: 122px;
+  padding-bottom: 80px;
 
   @include media(desktop) {
-    padding-top: 158px;
+    padding-top: 136px;
     padding-bottom: 100px;
   }
 }
 
 .policy-main-title {
-  font-family: 'Cinzel', sans-serif;
-  font-weight: 700;
-  font-size: 38px;
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 400;
+  font-size: 36px;
   text-align: center;
-  color: #fff;
-  margin-bottom: 28px;
+  color: #f7c549;
+  margin-bottom: 20px;
 
   @include media(desktop) {
-    font-size: 38px;
+    font-size: 36px;
     margin-bottom: 40px;
   }
 }
@@ -28,7 +34,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #d1d5db;
+  color: #e6eaf2;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -41,7 +47,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #d1d5db;
+  color: #e6eaf2;
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -62,7 +68,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
-  color: #d1d5db;
+  color: #e6eaf2;
   margin-bottom: 8px;
 
   &:last-child {
