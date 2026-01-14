@@ -1,0 +1,47 @@
+.cta-section {
+}
+
+.cta-bg-wrapper {
+  padding-top: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 150px;
+    padding-bottom: 71px;
+    max-width: 1440px;
+    background-image: url(../img/cta/cta-phones-desk.png),
+      url(../img/cta/cta-top-circle.png), url(../img/cta/cta-bottom-circle.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: bottom 15px right 225px, bottom 27px right 493px,
+      bottom 0px right 555px;
+    background-size: auto, auto, auto;
+  }
+}
+
+.cta-container {
+  @include media(desktop) {
+  }
+}
+
+.cta-title {
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  color: #9faedb;
+  margin-bottom: 28px;
+
+  @include media(desktop) {
+    font-size: 36px;
+    text-align: left;
+    max-width: 519px;
+    margin-bottom: 38px;
+  }
+}
+
+.cta-btn {
+  @include media(desktop) {
+  }
+}

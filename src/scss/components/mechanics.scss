@@ -1,0 +1,69 @@
+.mechanics-section {
+}
+
+.mechanics-bg-wrapper {
+  padding-top: 80px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/mechanics/mechanics-light-mob.png);
+  background-repeat: no-repeat;
+  background-position: top -90px left;
+  background-size: auto, auto;
+
+  @include media(desktop) {
+    padding-top: 150px;
+    max-width: 1440px;
+    background-image: url(../img/mechanics/mechanics-light-desk.png);
+    background-position: top -55px left;
+  }
+}
+
+.mechanics-container {
+  @include media(desktop) {
+  }
+}
+
+.mechanics-content-wrapper {
+  @include media(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 121px;
+  }
+}
+
+.mechanics-text-wrapper {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 12px;
+
+  @include media(desktop) {
+    gap: 38px;
+    max-width: 394px;
+  }
+}
+
+.mechanics-lantern-img {
+  min-width: 55px;
+}
+
+.mechanics-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #e6eaf2;
+
+  @include media(desktop) {
+  }
+}
+
+.mechanics-img {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}
