@@ -1,5 +1,5 @@
 .footer {
-  background: #e63946;
+  background: #f7c549;
   padding-top: 34px;
   padding-bottom: 34px;
 
@@ -37,11 +37,10 @@
 .footer-link {
   display: flex;
   align-items: center;
-  font-family: 'Cinzel', sans-serif;
-  font-weight: 700;
+  font-family: 'DM Serif Display', sans-serif;
+  font-weight: 400;
   font-size: 20px;
-  line-height: 1.5;
-  color: #0e0f14;
+  color: #19152d;
   transition: color 0.3s ease-in-out;
 
   @include media(desktop) {
@@ -57,7 +56,7 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 1.5;
-  color: #0e0f14;
+  color: #19152d;
 
   @include media(desktop) {
     text-align: center;

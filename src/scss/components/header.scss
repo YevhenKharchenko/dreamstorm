@@ -1,14 +1,33 @@
 .header {
-  background: #0e0f14;
-  padding: 6px 0;
+  background: #19152d;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
 
   @include media(desktop) {
-    padding: 2px 0;
   }
+}
+
+.header-bg-wrapper {
+  padding: 6px 0;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/hero/hero-bg-mob.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
+
+  @include media(desktop) {
+    padding: 10px 0;
+    max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.jpg);
+  }
+}
+
+.header-bg-wrapper-context {
+  background-image: none;
 }
 
 .header-container {
@@ -42,17 +61,16 @@
   @include media(desktop) {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 138px;
   }
 }
 
 .nav-list-link {
-  border-radius: 50px;
-  padding: 8px 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  color: #d1d5db;
+  line-height: 1.5;
+  color: #e6eaf2;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -62,7 +80,7 @@
   &:focus,
   &:active,
   &.active {
-    color: #e63946;
+    color: #f7c549;
   }
 }
 
